@@ -19,7 +19,7 @@ const TranslationInput = ({ id, type, dataTranslateKey }) => {
 
  }, [dataTranslateKey]);
 
- return <input id={id} className="input" placeholder={placeholder} type={type} />;
+ return <input id={id} className="input" placeholder={placeholder} type={type} data-translate-key={dataTranslateKey} />;
 };
 
 export default TranslationInput;

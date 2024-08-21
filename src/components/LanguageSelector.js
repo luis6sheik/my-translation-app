@@ -2,16 +2,13 @@
 
 import React from 'react';
 
-const LanguageSelector = () => {
+const LanguageSelector = ({theOnChange}) => {
 
- 	const handleLanguageChange = (event) => {
- 		const selectedLanguage = event.target.value;
- 		localStorage.setItem('language', selectedLanguage);
- 		window.location.reload();
- 	};
+ 	
  	return (
 		
- 		<select onChange={handleLanguageChange}>
+ 		<select onChange={theOnChange} id="language">
+ 			<option value="">Select Language</option>
  			<option value="en">English</option>
  			<option value="es">Español</option>
  		</select>
